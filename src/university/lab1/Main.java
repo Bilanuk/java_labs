@@ -14,13 +14,16 @@ public class Main {
         myCoolHashClass.AddItemToHash(test3);
         myCoolHashClass.AddItemToHash(test4);
 
-//        myCoolHashClass.printMe();
+        myCoolHashClass.printMeAsTable();
+        myCoolHashClass.FindElement(test4.getKey());
+        myCoolHashClass.DeleteElement(test4.getKey());
         myCoolHashClass.printMeAsTable();
 
-        System.out.print(myCoolHashClass.FindElement(test4.getKey()).getValue());
-        System.out.print(myCoolHashClass.DeleteElement(test4.getKey()).getKey());
-
-        myCoolHashClass.printMeAsTable();
+//        Item test5 = new Item(42561, "fifth element");
+//
+//        myCoolHashClass.AddItemToHash(test5);
+//        myCoolHashClass.printMeAsTable();
+//        myCoolHashClass.FindElement(test4.getKey());
     }
 }
 
